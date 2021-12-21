@@ -1,0 +1,12 @@
+x = linspace(-5,5);
+y = linspace(-5,5);
+[X,Y] = meshgrid(x,y);
+Z= power((power(X,2) + Y -11),2) + power((X + power(Y,2) -7),2);
+Z = log(0.01+Z);
+figure;
+[C,h] = contour(X,Y,Z,'ShowText','on');
+hold on;
+plot(3,2,'x','MarkerSize',20,'MarkerEdgeColor','red','LineWidth',2);
+plot(3.584428,-1.848127,'x','MarkerSize',20,'MarkerEdgeColor','red','LineWidth',2);
+plot(-3.779310,-3.283186,'x','MarkerSize',20,'MarkerEdgeColor','red','LineWidth',2);
+plot(-2.805118,3.131313,'x','MarkerSize',20,'MarkerEdgeColor','red','LineWidth',2);
