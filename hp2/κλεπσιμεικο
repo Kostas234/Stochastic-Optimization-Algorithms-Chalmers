@@ -1,8 +1,0 @@
-Loop generation{
-loop individual{
-fitnessTrain(individual) = RunSimulation(weights,train data set)
-fitnessVal(indiviudal) = RunSimulation(weights,val data set)
-end loop individual}
-selection/mutation (i neglected crossover)
-end loop generation}
-conditions? anyway ^ thats mine
